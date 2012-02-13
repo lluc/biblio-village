@@ -1,0 +1,38 @@
+<html>
+<head>
+	{% block head %}
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}" type="text/css">
+	{% endblock %}
+</head>
+<body>
+<header>
+  <h1>Bibliothèque de Villiers-sur-Loir</h1>
+</header>
+<nav>
+	<h2>Circulations</h2>
+	<ul>
+		<li><a href="/admin/pret" >Prêt</a></li>
+		<li><a href="/admin/retour" >Retour</a></li>
+	</ul>
+	<h2>Livres</h2>
+	<ul>
+		<li><a href="/admin/livres/catalogue" >Catalogage</a></li>
+		<li><a href="/admin/livres/categ" >Catégories</a></li>
+		<li><a href="/admin/livres/acquisition" >Acquisitions</a></li>
+		<li><a href="/admin/livres/inventaire" >Inventaire</a></li>
+	</ul>
+	
+	<h2>Adhérents</h2>
+	<ul>
+		<li><a href="/admin/adherent/" >Inscription</a></li>
+		<li>Catégories</li>
+	</ul>
+</nav>
+<article>
+	{% block content %}{% endblock %}
+</article>
+<footer>
+<p><small>Géré par Biblio-Village.</small></p>
+</footer>
+</body>
+</html>

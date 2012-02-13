@@ -1,0 +1,107 @@
+/*
+style.css
+---------
+ 
+Luc LEGER - Fevrier 2012
+*/
+
+header
+{
+    margin-top: 15px;
+    height: 80px;
+    border-radius: 5px;
+    background: url('images/header_bandeau_clair.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;  
+    text-shadow: 2px 2px 2px;
+	text-align: left;
+	text-indent:  50px;
+	text-shadow: 2px 2px 4px #5d4918;
+	padding-top:  1em;
+    color: white;
+	outline-color: #fef3ba;
+    font: caption;
+}
+
+body
+{
+	font: caption;
+	background-color: #D6B193;
+
+}
+
+nav
+{
+	text-align: center;
+	border-radius: 5px;
+	margin: 5px;
+	padding:  5px;
+	background-color: #D9BFA4;
+	color: #524131;
+	float:left;
+	width: 20%;
+	height: 75%;
+}
+
+nav ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+nav li
+{
+	height: 25px;
+	border-radius: 5px;
+	margin: 5px;
+	padding:  5px;
+	background-color: #9D8A7B;
+	color: white;
+}
+nav li a
+{
+	font-weight: bold;
+	color: white;
+}
+
+article
+{
+	float:left;
+	background-color: #D6B193;
+	padding:  20px;
+}
+
+article ul
+{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+article li
+{
+	height: 25px;
+	border-radius: 5px;
+	margin: 5px;
+	padding:  5px;
+	background-color: #D9BFA4;
+	color: #524131;
+	text-align: center;
+}
+
+article li a
+{
+	font-weight: bold;
+	color: #524131;
+}
+
+footer {
+	
+	text-align: right;
+    position: relative;
+    clear:both;
+    height: 30px;
+    bottom: 0;
+}
