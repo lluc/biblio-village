@@ -28,7 +28,6 @@ body
 {
 	font: caption;
 	background-color: #D6B193;
-
 }
 
 nav
@@ -71,6 +70,7 @@ article
 	float:left;
 	background-color: #D6B193;
 	padding:  20px;
+	width: 70%;
 }
 
 article ul
@@ -97,6 +97,33 @@ article li a
 	color: #524131;
 }
 
+article li id
+{
+	font-weight: bold;
+	color: #524131;
+	width:3em;
+	float:left;
+	border:1px solid black;
+	border-radius:5px;
+}
+
+article li text
+{
+	color: #524131;
+	width:80%;
+	float:left;
+	text-align: left;
+	margin-left: 1em;
+}
+
+article li text adresse
+{
+	color: #524131;
+	margin-left: 1em;
+	text-align: left;
+}
+
+
 footer {
 	
 	text-align: right;
@@ -104,4 +131,16 @@ footer {
     clear:both;
     height: 30px;
     bottom: 0;
+}
+
+parent {
+	padding: 5px;
+	background: #D9BFA4;
+	border:1px solid black;
+	border-radius:5px;
+	background-color:#D9BFA4;
+	border-radius:20px;
+	box-shadow:
+	0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
+	0px 2px 2px 0px rgba(255, 255, 255, 0.5);
 }

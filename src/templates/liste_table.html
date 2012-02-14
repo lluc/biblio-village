@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+{% block content %}
+  {% if session.logged_in %}
+    <form action="{{ url_for('add_entry') }}" method=post class=add-entry>
+      <dl>
+        <dt>Title:
+        <dd><input type=text size=30 name=title>
+        <dt>Text:
+        <dd><textarea name=text rows=5 cols=40></textarea>
+        <dd><input type=submit value=Share>
+      </dl>
+    </form>
+  {% endif %}
+  <parent>
+	  {{parent.decode("utf-8")}}
+  </parent>
+  <h2>Liste {{liste.decode("utf-8")}}</h2>
+  <ul class=entries>
+  {% for entry in entries %}
+    <li><id>{{ entry.title }}</id> <text>{{ entry.text.decode("utf-8")|safe }}</text>
+  {% else %}
+    <li><em>La liste est vide</em>
+  {% endfor %}
+  </ul>
+{% endblock %}
