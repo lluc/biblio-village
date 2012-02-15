@@ -1,0 +1,42 @@
+{% extends "layout.html" %}
+{% block title %}Index{% endblock %}
+{% block head %}
+  {{ super() }}
+{% endblock %}
+{% block content %}
+<parent>
+	  <a href="{{parent[0]}}">{{parent[1].decode("utf-8")}}</a>
+</parent>
+<h2>Fiche adhérent</h2>
+
+<ul>
+	<li>
+		<cle><b>Numéro</b></cle>
+		<valeur>{{entry.numero}}</valeur>
+    </li>
+</ul>
+<ul style="margin-left: 25px;">
+    <li>
+		<cle style="width: 6em;">Nom</cle>
+		<valeur>{{entry.nom.decode("utf-8").upper()}}</valeur>
+		<cle style="width: 6em;">Prénom</cle>
+		<valeur>{{entry.prenom.decode("utf-8").capitalize()}}</valeur>
+    </li>
+    <li>
+		<cle style="width: 6em;">Adresse</cle>
+		<valeur>{{entry.adr_rue.decode("utf-8")}}</valeur>
+		<valeur>{{entry.adr_CP.decode("utf-8")}}</valeur>
+		<valeur>{{entry.adr_ville.decode("utf-8").upper()}}</valeur>
+    </li>
+    <li>
+		<cle style="width: 6em;">Téléphone</cle>
+		<valeur>{{entry.telephone}}</valeur>
+		<cle>Courriel</cle>
+		<valeur>{{entry.courriel}}</valeur>
+    </li>
+    <li>
+		<cle>Date de naissance</cle>
+		<valeur>{{entry.date_naissance}}</valeur>
+    </li>
+</ul>
+{% endblock %}

@@ -14,6 +14,7 @@ app.config.from_object(__name__)
 def connect_db():
     return sqlite3.connect(app.config['DATABASE'])
     
+ 
 @app.before_request
 def before_request():
     g.db = connect_db()
@@ -30,7 +31,7 @@ def accueil():
 
 @app.route('/admin/adherent/<action>')
 def routeAdherent(action):
-	adh = adherent.Adherent()
+	adh = adherent.Adherent(app)
 	return adh.render(action)
 
 if __name__ == "__main__":

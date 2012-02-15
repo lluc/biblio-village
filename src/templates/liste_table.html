@@ -11,13 +11,16 @@
       </dl>
     </form>
   {% endif %}
+  
   <parent>
-	  {{parent.decode("utf-8")}}
+	  <a href="{{parent[0]}}">{{parent[1].decode("utf-8")}}</a>
   </parent>
+  
   <h2>Liste {{liste.decode("utf-8")}}</h2>
+  
   <ul class=entries>
   {% for entry in entries %}
-    <li><id>{{ entry.title }}</id> <text>{{ entry.text.decode("utf-8")|safe }}</text>
+    <li><id><a href="fiche={{ entry.title }}">{{ entry.title }}</a></id> <text>{{ entry.text.decode("utf-8")|safe }}</text>
   {% else %}
     <li><em>La liste est vide</em>
   {% endfor %}

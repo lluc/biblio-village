@@ -123,6 +123,26 @@ article li text adresse
 	text-align: left;
 }
 
+article cle
+{
+	float:left;
+	border-radius: 5px;
+	padding:  5px;
+	background-color: #D9BFA4;
+	color: #524131;
+	text-align: left;
+}
+
+article valeur
+{
+	float:left;
+	border-radius: 5px;
+	padding:  5px;
+	background-color: #9D8A7B;
+	color: white;
+	font-weight: bold;
+}
+
 
 footer {
 	
@@ -143,4 +163,8 @@ parent {
 	box-shadow:
 	0px 2px 2px 0px rgba(0, 0, 0, 0.5) inset,
 	0px 2px 2px 0px rgba(255, 255, 255, 0.5);
+}
+
+parent a {
+	color: #524131;
 }
